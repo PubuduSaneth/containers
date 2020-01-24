@@ -4,7 +4,6 @@ FROM continuumio/miniconda3:4.7.12
 ENTRYPOINT []
 WORKDIR /opt/conda/bin
 
-RUN conda install --yes -c bioconda bedtools
 RUN conda install --yes -c bioconda -c conda-forge cnv_facets=0.15.0
 
 
